@@ -4,7 +4,11 @@ import traceback
 import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
+import sys
 
+
+# or simply:
+sys.path.insert(0, 'src')
 from mcqgenerator.utils import read_file, get_table_data
 from mcqgenerator.logger import logging
 from mcqgenerator.MCQgenerator import chain
